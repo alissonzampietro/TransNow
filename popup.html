@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Set Page Color Popup</title>
+    <title>TransNow</title>
     <style>
     body {
       overflow: hidden;
@@ -13,44 +13,22 @@
       text-align: center;
       border-radius: 4px;
     }
-
-    div:first-child {
-      margin-top: 0px;
+    h1 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.8em;
+      box-shadow: 1px 1px 4px #ccc;
     }
-
-    div {
-      cursor: pointer;
-      text-align: center;
-      padding: 1px 3px;
-      font-family: sans-serif;
-      font-size: 0.8em;
-      width: 100px;
-      margin-top: 1px;
-      background: #cccccc;
-    }
-    div:hover {
-      background: #aaaaaa;
-    }
-    #red {
-      border: 1px solid red;
-      color: red;
-    }
-    #blue {
-      border: 1px solid blue;
-      color: blue;
-    }
-    #green {
-      border: 1px solid green;
-      color: green;
-    }
-    #yellow {
-      border: 1px solid yellow;
-      color: yellow;
+    #res {
+      text-shadow: 1px 1px 1px #ccc;
+      font-size: 2em;
+      color: #f00;
+      font-weight: bold;
     }
     </style>
     <script src="popup.js"></script>
   </head>
   <body>
-    <h1><img src="icon.png"> Vamos traduzir!</h1>
+    <h1><img src="icon.png"> A tradução é : </h1>
+    <p id="res">traduzindo...</p>
   </body>
 </html>
