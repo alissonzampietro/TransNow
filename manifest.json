@@ -12,6 +12,7 @@
   "permissions": [
     "activeTab",
     "tabs",
-    "https://ajax.googleapis.com/"
+    "https://ajax.googleapis.com/",
+    "http://www.alzaro.com.br:8080/"
   ]
 }
