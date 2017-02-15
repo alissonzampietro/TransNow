@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
           document.getElementById("res").innerHTML = jsonReturned.translator;
         }
       };
-      xhttp.open("GET", "www.alzaro.com.br:8080/"+selection[0], true);
+      xhttp.open("GET", "http://www.alzaro.com.br:8080/"+selection[0], true);
       xhttp.send();
   });
 
