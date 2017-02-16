@@ -1,4 +1,4 @@
-#![TransNow](https://raw.githubusercontent.com/alissonzampietro/TransNow/master/images/160.png)
+#![TransNow](https://raw.githubusercontent.com/alissonzampietro/TransNow/master/images/260.png)
 
  :gb: Uma linda extensão para o Chrome, para que você traduza textos sem sair da página.
  
