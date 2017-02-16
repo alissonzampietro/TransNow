@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   chrome.tabs.executeScript( {
       code: "window.getSelection().toString();"
   }, function(selection) {
-      if(selection[0].length == 0){
-        welcomeMessage();
-      }else {
+      if(selection[0].length > 0){
+        document.getElementById("msgMain").innerHTML = "Texto traduzido: ";
         document.getElementById("res").innerHTML = "traduzindo...";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -19,8 +18,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
-
-var welcomeMessage = function()
-{
-  document.getElementById("msgMain").innerHTML = "Bem vindo!";
-}
