@@ -12,4 +12,4 @@ E quando voltava ao texto, já tinha perdido a concentração :unamused:
 
 ###### Por este motivo eu criei o TransNow para o Chrome!
 
-Para instalá-lo, basta acessar este [LINK](https://chrome.google.com/webstore/detail/transnow/bhbbdjohjpodjdkmbdadmpmlaoecdjmb), adicione ao seu navegador, e ele já estará disponível no seu browser.
+Para instalá-lo, basta acessar este [LINK](https://chrome.google.com/webstore/detail/transnow/bhbbdjohjpodjdkmbdadmpmlaoecdjmb), adicione ao seu navegador, e a Extension já estará disponível no seu browser.
