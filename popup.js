@@ -14,3 +14,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+
+var interrogacao = document.getElementById("messages");
+
+var changeInfos = function(remove, add, message){
+    interrogacao.classList.remove(remove);
+    interrogacao.classList.add(add);
+    interrogacao.innerHTML = message;
+}
+
+var toogle = function()
+{
+  if(interrogacao.classList.contains("help"))
+  {
+    changeInfos('help','info','Ajuda: Selecione o texto em Inglês e depois clique no meu ícone ;-)');
+  }else{
+    changeInfos('info','help','?');
+  }
+}
+
+interrogacao.addEventListener("click", toogle);

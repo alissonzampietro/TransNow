@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -15,8 +14,8 @@
     }
     h1 {
       border-bottom: 1px solid #ccc;
-      padding-bottom: 0.8em;
       box-shadow: 1px 1px 4px #ccc;
+      padding-bottom: 1em;
     }
     #res {
       text-shadow: 1px 1px 1px #ccc;
@@ -24,11 +23,34 @@
       color: #f00;
       font-weight: bold;
     }
+
+    .info {
+      font-size: 0.8em;
+    }
+
+    .help {
+      font-size: 1em;
+      float: left;
+      background-color: #ecbb0b;
+      color: #fff;
+      width: 25px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+    #messages {
+      margin:0;
+      margin-bottom: 2px;
+      padding: 0;
+    }
+    #messages:hover {
+      cursor: pointer;
+    }
     </style>
-    <script src="popup.js"></script>
   </head>
   <body>
     <h1><img src="icon.png"> A tradução é : </h1>
     <p id="res">traduzindo...</p>
+    <p id="messages" class="help">?</p>
   </body>
+  <script src="popup.js"></script>
 </html>

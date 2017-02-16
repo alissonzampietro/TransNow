@@ -3,7 +3,7 @@
 
   "name": "TransNow",
   "description": "This extension translate itens in real time in the page",
-  "version": "0.1",
+  "version": "0.4",
 
   "browser_action": {
     "default_icon": "icon.png",
