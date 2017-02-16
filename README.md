@@ -10,3 +10,6 @@ Quem nunca esteve lendo aquele texto em inglês e, de repente, surgiu uma dúvid
 
 E quando voltava ao texto, já tinha perdido a concentração :unamused:
 
+###### Por este motivo eu criei o TransNow para o Chrome!
+
+Para instalá-lo, basta acessar este [https://chrome.google.com/webstore/detail/transnow/bhbbdjohjpodjdkmbdadmpmlaoecdjmb][link], e ele já estará disponível no seu browser.
