@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("res").innerHTML = jsonReturned.translator;
           }
         };
-        xhttp.open("GET", "http://apitransnow/"+selection[0], true);
+        xhttp.open("GET", "http://localhost:8080/"+selection[0], true);
         xhttp.send();
       }
   });
