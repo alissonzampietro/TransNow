@@ -1,5 +1,7 @@
 #![TransNow](https://raw.githubusercontent.com/alissonzampietro/TransNow/master/images/260.png)
 
+Versão: 0.7
+
  :gb: Uma linda extensão para o Chrome, para que você traduza textos sem sair da página.
  
 Quem nunca esteve lendo aquele texto em inglês e, de repente, surgiu uma dúvida em relação a uma palavra? Bom, eu executava o seguinte processo para tirar a minha dúvida:
