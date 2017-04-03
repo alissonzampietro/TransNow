@@ -16,5 +16,4 @@ document.addEventListener('DOMContentLoaded', function () {
         xhttp.send();
       }
   });
-
 });

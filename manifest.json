@@ -13,6 +13,14 @@
     "activeTab",
     "tabs",
     "https://ajax.googleapis.com/",
-    "http://www.alzaro.com.br:8080/"
-  ]
+    "http://www.alzaro.com.br:8080/",
+    "contextMenus"
+  ],
+  "icons":{
+    "16":"icon.png"
+  },
+  "background":{
+    "scripts" : ["contextMenu.js"],
+    "persistent": false
+  }
 }
