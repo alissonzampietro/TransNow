@@ -1,25 +1,22 @@
-var translate = require("google-translate-api");
+const translate = require("google-translate-api");
+const translationController = () => {
 
-var translationController = () => {
+  const _getTranslation = (req,res) => {
 
-  var _getTranslation = (req,res) => {
-
-    var q = req.params.q;
+    const q = req.params.q;
   		translate(q, {from: 'en',to: 'pt'})
         .then(response => {
   			     res.json({"translator":response.text});
   		  }).catch( err => {
   		    console.error(err);
+          console.log(res.statusCode);
   		  }
       );
-
   }
 
   return {
     getTranslation: _getTranslation
   }
-
-
 
 }
 
