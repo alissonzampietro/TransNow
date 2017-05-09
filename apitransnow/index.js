@@ -1,7 +1,11 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
 const translate = require('google-translate-api');
+const translationRouter = require("./routes/translationRouter.js");
+const morgan = require('morgan');
+
+app.use(morgan('dev'));
 
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -11,13 +15,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.get('/:q', function(req,res){
-	var q = req.params.q;
-		translate(q, {from: 'en',to: 'pt'}).then(response => {
-			res.json({"translator":response.text});
-		}).catch(err => {
-		    console.error(err);
-		});
-});
+app.use("/", translationRouter);
+
 
 app.listen(8080);
