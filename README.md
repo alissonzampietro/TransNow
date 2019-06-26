@@ -1,4 +1,4 @@
-#![TransNow](https://raw.githubusercontent.com/alissonzampietro/TransNow/master/images/260.png)
+![TransNow](https://raw.githubusercontent.com/alissonzampietro/TransNow/master/images/260.png)
 
 Versão: 0.7
 
@@ -16,7 +16,6 @@ E quando voltava ao texto, já tinha perdido a concentração :unamused:
 
 Para instalá-lo, basta acessar este [LINK](https://chrome.google.com/webstore/detail/transnow/bhbbdjohjpodjdkmbdadmpmlaoecdjmb), adicione ao seu navegador, e a Extension já estará disponível no seu browser.
 
-## Contributors ✨
+## Contribuidores ✨
 
-Thanks goes to these wonderful people
 <table><tr><td align="center"><a href="https://github.com/alissonzampietro"><img src="https://avatars.githubusercontent.com/u/6091367?v=3" width="100px;" alt="Alisson Zampietro"/><br /><sub><b>Alisson Zampietro</b></sub></a></td><td align="center"><a href="https://github.com/henrique-voni"><img src="https://avatars.githubusercontent.com/u/20046231?v=3" width="100px;" alt="Henrique Voni"/><br /><sub><b>Henrique Voni</b></sub></a></td><td align="center"><a href="https://github.com/pedroafabri"><img src="https://avatars.githubusercontent.com/u/13004677?v=3" width="100px;" alt="Pedro Fabri"/><br /><sub><b>Pedro Fabri</b></sub></a></td></tr></table>
