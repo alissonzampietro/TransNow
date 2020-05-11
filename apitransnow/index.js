@@ -1,11 +1,15 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const auth = require('./middleware/auth');
 const translate = require('google-translate-api');
 const translationRouter = require("./routes/translationRouter.js");
 const morgan = require('morgan');
 
 app.use(morgan('dev'));
+
+app.use(auth);
 
 app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -16,6 +20,5 @@ app.use(function (req, res, next) {
 });
 
 app.use("/", translationRouter);
-
 
 app.listen(8080);
