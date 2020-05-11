@@ -13,7 +13,7 @@ var translateWord = (word, callback) => {
         callback(jsonReturned.translator);
       }
     };
-    xhttp.open("GET", "http://localhost:8080/"+word, true);
+    xhttp.open("POST", "http://localhost:8080/"+word, true);
     xhttp.send();
 }
 
