@@ -1,3 +1,9 @@
+window.browser = (function () {
+  return window.msBrowser ||
+    window.browser ||
+    window.chrome;
+})();
+
 var translateWord = (word, callback) => {
     var xhttp = new XMLHttpRequest();
     xhttp.setRequestHeader('Authorization', 'bearer AA60265CFDCAF954B3042885FB420662');
@@ -12,14 +18,15 @@ var translateWord = (word, callback) => {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  chrome.tabs.executeScript( {
+  browser.tabs.executeScript( {
       code: "window.getSelection().toString();"
   }, function(selection) {
       if(selection[0].length > 0){
+        let showText = document.getElementById("res");
         document.getElementById("msgMain").innerHTML = "Texto traduzido: ";
-        document.getElementById("res").innerHTML = "traduzindo...";
+        showText.innerHTML = "traduzindo...";
         translateWord(encodeURIComponent(selection[0]), (word) => {
-          document.getElementById("res").innerHTML = word;
+          showText.innerHTML = word;
         });
 
       }
@@ -32,9 +39,9 @@ var contextMenuItem = {
   "contexts"  : ["selection"]
 }
 
-chrome.contextMenus.create(contextMenuItem);
+browser.contextMenus.create(contextMenuItem);
 
-chrome.contextMenus.onClicked.addListener(function(clickData){
+browser.contextMenus.onClicked.addListener(function(clickData){
   translateWord(encodeURIComponent(clickData.selectionText), (word) => {
     alert(word);
   });
