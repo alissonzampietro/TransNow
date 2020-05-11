@@ -1,5 +1,6 @@
 var translateWord = (word, callback) => {
     var xhttp = new XMLHttpRequest();
+    xhttp.setRequestHeader('Authorization', 'bearer AA60265CFDCAF954B3042885FB420662');
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var jsonReturned = JSON.parse(this.responseText);
