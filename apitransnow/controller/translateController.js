@@ -1,4 +1,4 @@
-const translate = require("google-translate-api");
+const translate = require("translation-google");
 const translationController = () => {
 
   const _getTranslation = (req,res) => {
